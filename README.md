@@ -33,7 +33,7 @@ Development environment:
 ## Table of Contents:
 
  - [Setting up S3](#setting-up-s3) : Set up all necessary objects on AWS using the CLI.
- - [Getting to know Docker for Mac](#getting-to-know-docker-for-Mac): Ensuring Docker is working as expected.
+ - [Getting to know Docker for Mac](#getting-to-know-docker-for-mac): Ensuring Docker is working as expected.
  - [Getting to know Redis](#getting-to-know-redis): Using Docker to play with Redis - no installs required!
  - [Getting to know MongoDB](#getting-to-know-mongodb): Using Docker to play with MongoDB - no installs required!
  - [Playing with the full application stack](#playing-with-the-full-application-stack): `git clone` + `make` + `docker-compose` to stand up the full app locally.
