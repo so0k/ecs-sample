@@ -16,8 +16,8 @@ To implement the above funcionality, the following stack will be used:
 
 - AWS S3: To store the user-uploaded images.
 - MongoDB: As a Document Oriented Database keeping track of images stored on S3 and the comments of users.
-- Redis Pub/Sub: Redis as a Publish/Subscribe messaging system to propgate real time updates
-- App: the Golang application to serve the webpage and mange the websockets with client browsers
+- Redis Pub/Sub: Redis as a Publish/Subscribe messaging system to propagate real time updates
+- App: the Golang application to serve the webpage and manage the websockets with client browsers
 - Nginx: As a load balancer to easily scale the application horizontally.
 
 **Note**: Nginx is used as a load balancer while running the full stack locally, in a production environment a more robust load balancer setup should be considered.
@@ -26,7 +26,7 @@ To implement the above funcionality, the following stack will be used:
 Development environment:
 
  - Tested on OSX El Capitan with Bash
- - Install [Docker For Mac](https://beta.docker.com/) (Publicly available after DockerCon 2016)
+ - Install [Docker For Mac](https://beta.docker.com/)
  - Ensure you have a working AWS Account (we will do sample S3 setup as part of these instructions)
  - Download [jq](https://github.com/stedolan/jq/releases) to easily work with AWS resources from the CLI
 
@@ -107,7 +107,7 @@ Attach Policy Document to `sample_app` user
 aws iam attach-user-policy --user-name sample_app --policy-arn $policy_arn
 ```
 
-**Note**: CloudFormmation should be considered to automate the above steps.
+**Note**: CloudFormation should be considered to automate the above steps.
 
 ## Getting to know Docker for Mac
 
