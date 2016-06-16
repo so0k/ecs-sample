@@ -1,0 +1,47 @@
+version: '2'
+services:
+    lb:
+        container_name: lb
+        build: lb
+        restart: unless-stopped
+        ports:
+            - "80:80"
+        networks:
+            - front-tier
+
+    app:
+        image: so0k/ecs-sample:1.0.0
+        entrypoint: /app/ecs-sample
+        env_file: .env
+        networks:
+            front-tier:
+                aliases:
+                    - apps
+            back-tier:
+        expose:
+            - 80
+        depends_on:
+            - lb
+
+    mongo:
+        image: mongo:3.2.6
+        container_name: mongo
+        volumes:
+            - mongodata:/data/db
+            - mongoconfig:/data/configdb
+        networks:
+            - back-tier
+
+    redis:
+        image: redis:3.2.0-alpine
+        container_name: redis
+        networks:
+            - back-tier
+
+volumes:
+    mongodata:
+    mongoconfig:
+
+networks:
+    back-tier:
+    front-tier:

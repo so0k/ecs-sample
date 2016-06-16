@@ -1,0 +1,117 @@
+{
+	"ImportPath": "github.com/so0k/ecs-sample",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/AdRoll/goamz/aws",
+			"Rev": "0c4b4ec49d2da696b3df5cca52cac2302c461db9"
+		},
+		{
+			"ImportPath": "github.com/AdRoll/goamz/s3",
+			"Rev": "0c4b4ec49d2da696b3df5cca52cac2302c461db9"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.10.0-19-gf3cfb45",
+			"Rev": "f3cfb454f4c209e6668c95216c4744b8fddb2356"
+		},
+		{
+			"ImportPath": "github.com/blang/semver",
+			"Comment": "v3.1.0",
+			"Rev": "aea32c919a18e5ef4537bbd283ff29594b1b0165"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/backend",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/backend/closer",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/backend/global",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/backend/sockets/ajaxsocket",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/backend/sockets/websocket",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/log",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/desertbit/glue/utils",
+			"Comment": "1.9.1",
+			"Rev": "a9786adb7e2ca6cdecbcf2bbfadd8a8bdbd9c5a7"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Comment": "v1.0.0-1-gb8dc900",
+			"Rev": "b8dc90050f24c1a73a52f107f3f575be67b21b7c"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Comment": "v1.0.0-1-gb8dc900",
+			"Rev": "b8dc90050f24c1a73a52f107f3f575be67b21b7c"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Comment": "v1.1-4-gaed02d1",
+			"Rev": "aed02d124ae4a0e94fea4541c8effd05bf0c8296"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.1-13-g9fa818a",
+			"Rev": "9fa818a44c2bf1396a17f9d5a3c0f6dd39d2ff8e"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.0.0-12-ga687089",
+			"Rev": "a68708917c6a4f06314ab4e52493cc61359c9d42"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "62bee037599929a6e9146f29d10dd5208c43507d"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2",
+			"Comment": "r2016.02.04-3-g29cc868",
+			"Rev": "29cc868a5ca65f401ff318143f9408d02f4799cc"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/bson",
+			"Comment": "r2016.02.04-3-g29cc868",
+			"Rev": "29cc868a5ca65f401ff318143f9408d02f4799cc"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/sasl",
+			"Comment": "r2016.02.04-3-g29cc868",
+			"Rev": "29cc868a5ca65f401ff318143f9408d02f4799cc"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/scram",
+			"Comment": "r2016.02.04-3-g29cc868",
+			"Rev": "29cc868a5ca65f401ff318143f9408d02f4799cc"
+		}
+	]
+}
