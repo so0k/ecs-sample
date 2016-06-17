@@ -12,7 +12,7 @@ Changes to the original application:
 
 The application allows users to upload images and see real time comments on those images. Clicking the image will show indicators where the image was clicked for every user. All this functionality was written by the Toptal developer.
 
-To implement the above funcionality, the following stack will be used:
+To implement the above functionality, the following stack will be used:
 
 - AWS S3: To store the user-uploaded images.
 - MongoDB: As a Document Oriented Database keeping track of images stored on S3 and the comments of users.
@@ -319,7 +319,7 @@ We are now ready to run the application.
 
 Let's watch containers getting started in a separate terminal:
 ```
-watch -n 1 "docker ps --format='table{{.Image}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
+watch -n 1 "docker ps --format='table{{.Image}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.ID}}'"
 ```
 
 Stand up the application in the background:
@@ -340,7 +340,6 @@ Get a shell on one of the running application containers:
 ```
 docker exec -it ecssample_app_1 /bin/sh
 ```
-
 
 Review the DNS records published by the Docker Engine:
 ```
@@ -401,3 +400,14 @@ Docker really simplified getting started with a new technology stack with minimu
 
 AWS ECS provides a robust infrastructure to run Docker Containers at scale in production.
 
+Images built are minimal and share layers where possible
+
+Image Sizes:
+```
+REPOSITORY          TAG                 CREATED             SIZE
+ecssample_lb        latest              2 hours ago         182.8 MB
+so0k/ecs-sample     dev                 2 hours ago         821.6 MB
+so0k/ecs-sample     1.0.0               3 hours ago         14.33 MB
+redis               3.2.0-alpine        7 days ago          29.07 MB
+mongo               3.2.6               3 weeks ago         313.1 MB
+```
