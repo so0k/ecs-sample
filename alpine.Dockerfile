@@ -2,7 +2,7 @@ FROM alpine:3.4
 #need to add ca certs for https verification
 #certs/certs /etc/ssl/certs/ca-certificates.crt
 RUN apk update \
-    && apk add --no-cache \
+    && apk add --update --no-cache \
         ca-certificates \
     && rm -rf /var/cache/apk/*
 
