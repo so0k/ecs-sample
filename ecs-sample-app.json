@@ -1,0 +1,37 @@
+{
+    "family": "ecs-sample-app", 
+    "containerDefinitions": [
+        {
+            "name": "app", 
+            "image": "so0k/ecs-sample:1.0.0", 
+            "cpu": 10, 
+            "memory": 200,
+            "essential": true, 
+            "entryPoint": [
+                "/app/ecs-sample"
+            ], 
+            "environment": [
+                {
+                    "name": "REDIS_URL", 
+                    "value": "redis://xxx"
+                },
+                {
+                    "name": "MONGO_URL", 
+                    "value": "mongo://xxx/ecs-sample"
+                },
+                {
+                    "name": "S3_BUCKET_NAME", 
+                    "value": "ecs-sample"
+                },
+                {
+                    "name": "AWS_ACCESS_KEY_ID", 
+                    "value": "AKIAJSH2JG6GAYVQ6XCQ"
+                },
+                {
+                    "name": "AWS_SECRET_ACCESS_KEY", 
+                    "value": "Z+x0WJHOrlOimZO2YpSagzOnnm/I7WBgYTV5IbJ2"
+                }
+            ]
+        }
+    ] 
+}

@@ -1,4 +1,4 @@
 .env
 terraform.tfvars
-*.dbs
+*.dsb
 *.dab
